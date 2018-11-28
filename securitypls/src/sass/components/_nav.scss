@@ -1,0 +1,59 @@
+.nav {
+    background-color: rgba(0,0,0,.10);
+    border-bottom: 1px solid #173157;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    line-height: 24px;
+    height: 80px;
+    width: 100%;
+    display: block;
+    transition: all .3s ease;
+    padding: 1rem;
+
+    & p {
+        font-size: 2.8rem;
+        text-decoration: overline;
+        margin-top: 2rem;
+
+        @media (min-width:768px) {
+            font-size: 4rem;
+        }
+    }
+
+
+    &__menu {
+        display: none;
+        position: absolute;
+        color: $color-primary;
+        font-size: 1rem;
+        top: 2rem;
+        right: 2rem;
+        list-style: none;
+        background-color: transparent;
+
+        @media (min-width:768px) {    
+            font-size: 1rem;
+            display: flex;
+        }
+
+        @media (min-width:952px) {    
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        & li {
+            margin: 1rem;
+            & a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.shrink {
+    height: 60px;
+    line-height: 12px;
+    background-color: #191919;
+}

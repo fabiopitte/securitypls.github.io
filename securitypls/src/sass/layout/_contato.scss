@@ -1,0 +1,31 @@
+.contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem auto;
+    top: 0;
+
+    @media (min-width:768px) {
+        flex-direction: row;
+        max-width: 1360px;
+        // margin: 30rem auto;
+        position: relative;
+        // top: 30rem;
+    }
+
+    &__description {
+        
+        @media (max-width:768px) {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 2.5rem;
+        }
+
+        text-align: center;
+        width: 50%;
+        border: .7rem solid rgba(31, 46, 67, .8);
+        border-radius: 0;
+        border-right:0;
+        font-size: 5rem;
+    }
+}

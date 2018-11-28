@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// ::selection {
+//   color: $color-selection;
+// }
+
+::scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  height: auto;
+  margin: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width:768px) {
+    margin: 1rem;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:868px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+}
